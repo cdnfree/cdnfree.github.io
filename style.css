@@ -15,14 +15,14 @@ b{font-weight:600}
 .center{width:100%;text-align:center}
 .brand{display:inline-block;margin-top:50px;}
 .logo{width:280px;height:auto;}
-.box{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+.box{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;font-family: "Pixel"}
 .box .e{flex:0 0 25%}
 .sold{color:#000;text-decoration:line-through}
-.card:hover{outline:none;border:1px solid #fff;background:#98FB98;border-radius:3px;box-shadow:1px 1px 4px rgba(100,100,100,.5)}
-.card{border:1px solid rgba(0,0,0,0.125);border-radius:0.25rem;margin:10px 15px;background-color:white}
+.card:hover{outline:none;border:1px solid #fff;background:#98FB98;border-radius:3px;box-shadow:1px 1px 4px rgba(100,100,100,.5);font-family: "Pixel"}
+.card{border:1px solid rgba(0,0,0,0.125);border-radius:0.25rem;margin:10px 15px;background-color:white;font-family: "Pixel"}
 .card .row{display:flex;flex-wrap:wrap;margin:15px}.card p{margin:15px}
 .card h5{margin:0;font-weight:700;font-size:17px;flex:0 0 75%}
-.card .price{flex:0 0 25%;text-align:right;color:#e74c3c}
+.card .price{flex:0 0 25%;text-align:right;color:#e74c3c;font-family: "Pixel"}
 @media(max-width:767px){.box .e{flex:0 0 100%} .brand{margin-top:30px;} .logo{width:200px;height:auto;}}
 @media(min-width:766px){.card h5{max-width:145px;overflow:hidden}}
 
