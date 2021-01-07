@@ -1,6 +1,6 @@
 body,ul,ol,li,dl,dd,p,h1,h2,h3,form{margin:0;padding:0}
 *{box-sizing:border-box}
-body{color:#444;background:rgba(0, 0, 0, 0) url("https://cdn.8hu.cn/hankbg.png");text-align:center;font-family: -apple-system,sans-serif}
+body{color:#444;background:rgba(0, 0, 0, 0) url("https://cdn.8hu.cn/hankbg.png");text-align:center;font-family: "Pixel";}
 .wp{width:90%;max-width:1000px;margin:auto;text-align:left;line-height:25px}
 h1{line-height:50px;font-size:30px;margin:20px auto 10px auto}
 a{text-decoration:none;outline:none;color:#000}
