@@ -46,7 +46,7 @@ a .widget_red{color:#FF5E52}.widget_red:hover{border-color:#FF5E52}.widget_red{p
 .mibiao a:hover,.mibiao a.c{color:#fff;background-color:#45B6F7}.mibiao{padding:15px 0 12px 15px}
 @font-face {
   font-family: 'Pixel';
-  src: url('https://benrenchuzu.com/assets/fonts/fangzheng.ttf') format('truetype');
+  src: url('/fangzheng.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
