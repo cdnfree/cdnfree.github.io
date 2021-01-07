@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,39 +10,19 @@
     <script src="https://cdn.8hu.cn/js/mibiao/Valine.min.js"></script>
   <style> </style>
 </head>
-<?php 
-error_reporting(E_ERROR|E_WARNING|E_PARSE);
-define('PATH',dirname(__FILE__).DIRECTORY_SEPARATOR);
-$misc=@include(PATH.'cache.misc.php');$misc=@unserialize($misc);
-$domains=@include(PATH.'cache.domains.php');$domains=@unserialize($domains);
-$links=@include(PATH.'cache.links.php');$links=@unserialize($links);
-$TITLE=$misc['name']?$misc['name']:'呆哥米表';
-if(is_array($domains)){foreach($domains as $v){empty($v[2])&&$v[2]='议价';empty($v[3])&&$v[3]='&nbsp;';$e_d.='<div class="e'.($v[2]=='已售'?' sold':'').'"><div class="card"><div class="row"><h5>'.$v[1].'</h5><span class="price">'.$v[2].'</span></div><p>'.$v[3].'</p></div></div>';}}
-if(is_array($links)){foreach($links as $v){$e_l.='<a href="'.$v[2].'" target="_blank">'.$v[1].'</a>&nbsp;&nbsp;';}}
-if($misc['sid']&&$misc['pid']){
-	$e_c='<div style="max-width:1000px"><br><div id="tc_s'.$misc['sid'].'p'.$misc['pid'].'"></div><link rel="stylesheet" href="https://cdn.8hu.cn/js/mibiao/tc.css"/><script src="//c.fansx.com/?m=c1&sid='.$misc['sid'].'&pid='.$misc['pid'].'"></script></div>';
-}
-print<<<e
-<html><head><meta charset="UTF-8"><title>{$TITLE}</title>
+<html><head><meta charset="UTF-8"><title>萝莉妈妈</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="https://cdn.8hu.cn/mibiao/bg.css">
-<style>@font-face {
-  font-family: 'Pixel';
-  src: url('assets/fonts/fangzheng.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-</style>
 </head><body>
 <div class="wp">
-	<div class="center"><div class="brand"><h1><a href="./">{$TITLE}</a></h1></div></div>
+	<div class="center"><div class="brand"><h1><a href="./">萝莉妈妈</a></h1></div></div>
 	<div class="box">
-		{$e_d}
+		<div class="e"><div class="card"><div class="row"><h5>Hou.lu</h5><span class="price">500</span></div><p>后路  给自己留条后路</p></div></div><div class="e"><div class="card"><div class="row"><h5>Suo.ma</h5><span class="price">2688</span></div><p>缩吗 短网址</p></div></div><div class="e"><div class="card"><div class="row"><h5>moe.mw</h5><span class="price">1200</span></div><p>萌王、魔王</p></div></div><div class="e"><div class="card"><div class="row"><h5>ovo.tf</h5><span class="price">150</span></div><p>OVO 表情包 萌哒</p></div></div><div class="e"><div class="card"><div class="row"><h5>Jiba.cm</h5><span class="price">200</span></div><p>鸡巴   趣域</p></div></div><div class="e"><div class="card"><div class="row"><h5>KKB.CM</h5><span class="price">150</span></div><p>看看逼   趣域</p></div></div><div class="e"><div class="card"><div class="row"><h5>OFO.CM</h5><span class="price">150</span></div><p>共享单车  趣域</p></div></div><div class="e"><div class="card"><div class="row"><h5>PPT.CM</h5><span class="price">200</span></div><p>PPT 模板网站  趣域</p></div></div><div class="e"><div class="card"><div class="row"><h5>Kou.Bi</h5><span class="price">议价</span></div><p>扣币</p></div></div><div class="e"><div class="card"><div class="row"><h5>loli.ma</h5><span class="price">议价</span></div><p>萝莉</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>90.mk</h5><span class="price">已售</span></div><p>九零萌咔</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>Ca.bi</h5><span class="price">已售</span></div><p>擦逼</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>Fuck.cat</h5><span class="price">已售</span></div><p>法克猫</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>Loli.fan</h5><span class="price">已售</span></div><p>萝莉番</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>Mai.Ba</h5><span class="price">已售</span></div><p>麦霸  企业备案  趣域</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>RRW.PW</h5><span class="price">已售</span></div><p>人人网</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>VIP.SB</h5><span class="price">已售</span></div><p>VIP 傻逼 烧饼，续费333</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>VPS.SI</h5><span class="price">已售</span></div><p>VPS</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>oss.ren</h5><span class="price">已售</span></div><p>精品短米，企业备案，西部数码</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>use.ee</h5><span class="price">已售</span></div><p>使用</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>wap.ac</h5><span class="price">已售</span></div><p>WAP</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>xxs.me</h5><span class="price">已售</span></div><p>新鲜事，小学生  西部数码</p></div></div><div class="e sold"><div class="card"><div class="row"><h5>zzw.pw</h5><span class="price">已售</span></div><p>站长网</p></div></div><div class="e"><div class="card"><div class="row"><h5>8hu.cn</h5><span class="price">非卖品</span></div><p>个备  情怀米</p></div></div><div class="e"><div class="card"><div class="row"><h5>cdn.vin</h5><span class="price">非卖品</span></div><p>企备  自用cdn</p></div></div><div class="e"><div class="card"><div class="row"><h5>Dai.Ge</h5><span class="price">非卖品</span></div><p>呆哥 阿呆</p></div></div><div class="e"><div class="card"><div class="row"><h5>Tool.hk.cn</h5><span class="price">非卖品</span></div><p>工具箱</p></div></div><div class="e"><div class="card"><div class="row"><h5>Tu.hk.cn</h5><span class="price">非卖品</span></div><p>企备  自用图床</p></div></div><div class="e"><div class="card"><div class="row"><h5>loc.cc</h5><span class="price">非卖品</span></div><p>企备 自用论坛米</p></div></div>
 	</div>
 
-{$e_c}
 
-	<a href="//loc.cc" target="_blank"><div class="widget widget_red"><strong>全球域名交流</strong><h2>全球域名交流论坛</h2><p>非主流域名玩家论坛：www.loc.cc</p></div></a>
+
+	<a href="//loc.cc" target="_blank"><div class="widget widget_red"><strong>全球域名交流论坛</strong><h2>米友们都在玩的圈子</h2><p>互联网综合交流、主机优惠、域名行情：www.loc.cc</p></div></a>
 		<div class="widget widget_links">
 			<h3>友情链接</h3>
 			<div class="mibiao">
@@ -62,14 +43,14 @@ print<<<e
 		
 		<div class="widget">
 			<h3>其他</h3>
-			<div style="text-align:center"><br>loc非人類QQ群：<span id="c_g"></span><br><a href="https://jq.qq.com/?_wv=1027&k=MEPmHSOK/" target="_blank"><img src="//tu.hk.cn/img/86" width="200" height="200" /></a></div>
+			<div style="text-align:center"><br>loc非人類QQ群：<span id="c_g"></span><br><a href="https://jq.qq.com/?_wv=1027&k=MEPmHSOK/" target="_blank"><img src="//tu.loc.cc/img/86" width="200" height="200" /></a></div>
 		</div>
 	
 
 
 <div class="widget">
 <h3>给我留言 </h3>
-   
+   <div style="font-size:14px;line-height:30px;margin:15px">
 <div class="comment"></div>
  <script>
  new Valine({
@@ -80,11 +61,10 @@ print<<<e
             app_key: 'oOEmj0KMRVMAxMbMOfLWP5SD', // 这里填写上面得到的APP KEY
             placeholder: '发表留言，请遵守法律法规，文明言语！' // [v1.0.7 new]留言框占位提示文字
         });
-    </script>
+    </script></div>
     <div class="cl"></div>
 
 </div></div><div class="foot">©  <a href="//dai.ge" target="_blank">阿呆</a> 米表</div>
 </div>
 </body>
 </html>
-e;
