@@ -1,0 +1,52 @@
+body,ul,ol,li,dl,dd,p,h1,h2,h3,form{margin:0;padding:0}
+*{box-sizing:border-box}
+body{color:#444;background:rgba(0, 0, 0, 0) url("https://cdn.8hu.cn/hankbg.png");text-align:center;font-family: -apple-system,sans-serif}
+.wp{width:90%;max-width:1000px;margin:auto;text-align:left;line-height:25px}
+h1{line-height:50px;font-size:30px;margin:20px auto 10px auto}
+a{text-decoration:none;outline:none;color:#000}
+b{font-weight:600}
+.tb{border-collapse:collapse;border:none}
+.tb th,.tb td{padding:3px 10px 3px 0;line-height:35px}
+.green{color:#9ACD32}
+.gray{color:#ccc}
+.misc{margin-top:10px;line-height:30px;font-size:16px}
+.hr{border-bottom:1px solid #cfdee3;width:100%;line-height:35px;margin:30px 0 10px;font-weight:400;font-size:20px;color:#1377dc;}
+.foot{border-top:1px solid #cfdee3;margin:30px auto;font-size:12px}
+.center{width:100%;text-align:center}
+.brand{display:inline-block;margin-top:50px;}
+.logo{width:280px;height:auto;}
+.box{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+.box .e{flex:0 0 25%}
+.sold{color:#000;text-decoration:line-through}
+.card:hover{outline:none;border:1px solid #fff;background:#98FB98;border-radius:3px;box-shadow:1px 1px 4px rgba(100,100,100,.5)}
+.card{border:1px solid rgba(0,0,0,0.125);border-radius:0.25rem;margin:10px 15px;background-color:white}
+.card .row{display:flex;flex-wrap:wrap;margin:15px}.card p{margin:15px}
+.card h5{margin:0;font-weight:700;font-size:17px;flex:0 0 75%}
+.card .price{flex:0 0 25%;text-align:right;color:#e74c3c}
+@media(max-width:767px){.box .e{flex:0 0 100%} .brand{margin-top:30px;} .logo{width:200px;height:auto;}}
+@media(min-width:766px){.card h5{max-width:145px;overflow:hidden}}
+
+.widget{clear:both;position:relative;margin-bottom:15px;background-color:#fff;border-radius:4px;border:1px solid #eaeaea;overflow:hidden}
+.widget h3{font-size:18px;color:#666;border-bottom:1px solid #eaeaea;background-color:#fbfbfb;margin:0;padding:11px 15px 10px}
+a .widget_red{color:#FF5E52}.widget_red:hover{border-color:#FF5E52}.widget_red{padding:0 15px 15px}
+.widget_red strong{margin:-1px 0 0 0;display:inline-block;padding:4px 15px;color:#fff;font-size:14px;font-weight:normal;background-color:#FF5E52}
+.widget_red h2{font-size:20px;font-weight:normal;margin:14px 0 10px}.widget_red p{color:#999}
+.widget_links ul{padding:10px 0 5px;color:#999;font-size:12px}
+.widget_links li{width:50%;float:left;padding:0;border-bottom:none;margin-bottom:8px;line-height:20px;height:20px;overflow:hidden}
+.widget_links li a{color:#777;margin:0 10px}.widget_links li a:hover{color:#45b6f7}
+.widget_links .project li,.widget_links .link li{float:none;width:100%;line-height:30px;height:30px;text-indent:6px}
+.project li .e{float:left;width:33%}li .e a{text-decoration:underline}.project li .e3{text-align:center;color:limegreen}
+.link li .e{float:left;width:33%}
+.pages{margin-top:10px}.pages li{display:inline}
+.pages li span,.pages li a{position:relative;float:left;padding:6px 12px;background:#fff;border:1px solid #e4e4e4;margin-left:-1px;color:#b4b4b4}
+.pages li.disabled span{color:#b4b4b4}.pages li.active span{color:#e4e4e4;background:fcfcfc}
+.pages li:first-child a,.pages li:first-child span{margin-left:0;border-bottom-left-radius:4px;border-top-left-radius:4px}
+.pages li:last-child a,.pages li:last-child span{border-bottom-right-radius:4px;border-top-right-radius:4px}
+.mibiao a{float:left;width:31.3333%;margin:0 1% 1% 0;text-indent:8px;font-size:12px;height:29px;line-height:29px;overflow:hidden;color:#999;background-color:#f6f6f6}
+.mibiao a:hover,.mibiao a.c{color:#fff;background-color:#45B6F7}.mibiao{padding:15px 0 12px 15px}
+@font-face {
+  font-family: 'Pixel';
+  src: url('https://benrenchuzu.com/assets/fonts/fangzheng.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
